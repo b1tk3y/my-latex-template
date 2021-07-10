@@ -1,0 +1,14 @@
+\makepagestyle{jeju}
+
+% 상단 면주
+\makeevenhead{jeju}{}{}{}%{left}{center}{right}
+\makeoddhead{jeju}{}{}{}
+
+% 하단 면주
+% {스타일이름}{left}{center}{right}: 홀수쪽 하단 면주
+\makeevenfoot{jeju}{\color{gray}\footnotesize\textsf{\leftmark}}{}{}
+\makeoddfoot{jeju}{}{}{\color{gray}\footnotesize\textsf{\thepage}}
+
+\copypagestyle{chapter}{plain}
+% plain 페이지스타일을 chapter 라는 이름의 스타일로 복사.
+\makeoddfoot{chapter}{}{}{\color{gray}\footnotesize\textsf\thepage}

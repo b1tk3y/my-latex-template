@@ -1,0 +1,9 @@
+% 참고: http://ajt.ktug.org/2011/0501karnes.pdf
+% 인용:
+% 특별히 \setheadfoot, \setheaderspaces, \setmarginnotes와 같은 명령을 써야 하 는 상황이라면
+% \usepackage{fapapersize}와 \usefapapersize 명령 사이에 두어야 효 과가 발생한다.
+%
+\usefastocksize{160mm,210mm}% 실제 인쇄되는 종이의 크기 {paperwidth}{paperheight} ipad
+\setheadfoot{0mm}{3\onelineskip}% {headheight}{footskip}
+\setmarginnotes{0mm}{0mm}{0mm}% {marginparsep}{marginparwidth}{marginparpush}
+\usefapapersize{160mm,210mm,24mm,*,22mm,*}% 재단된 용지. 제작이 끝난 책의 크기

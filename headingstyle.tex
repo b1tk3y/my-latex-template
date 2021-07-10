@@ -1,0 +1,19 @@
+\titleformat{\chapter} % texdoc titlesec
+	{\pagestyle{chapter}\vspace{-1cm}\normalfont\ttfamily\Huge\bfseries\color{PantoneBlue}} % PantoneBlue is custom color name.
+	{}
+	{0pt}
+ 	{\pagestyle{jeju}}
+
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+\newcommand{\datebox}[1]{% texdoc textpos
+	\begin{textblock}{3}(.05,-3.0)%hsize, (hpos, vpos)
+		\textcolor{PantoneBlue2}{\footnotesize\sffamily{#1}}
+	\end{textblock}
+}
+
+\titleformat{\section}
+	{\normalfont\sffamily\bfseries\large\color{GoldenGlow}}
+	{}
+	{0pt}
+	{}

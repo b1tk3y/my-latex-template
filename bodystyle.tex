@@ -1,0 +1,24 @@
+\newcommand{\supers}[1]{%윗첨자용
+	\raisebox{0.3em}{%
+		\textcolor{PantoneBlue2}{\tiny{\supergothic #1}}
+	}
+}
+
+\renewcommand{\thefigure}{\#\arabic{figure}}
+\renewcommand{\figurename}{}
+\newfixedcaption{\captionoffig}{figure}
+\captionnamefont{\color{orange}\ttfamily\footnotesize}
+\captiontitlefont{\color{gray}\sffamily\footnotesize}
+\hangcaption
+\captionstyle{\raggedright}
+\precaption{\vspace{-3mm}}
+
+\newenvironment{fillimg}[1]%
+{%
+	\begin{center}%
+		\makebox[\textwidth]{\includegraphics[width=\paperwidth]{#1}}%
+}
+{\end{center}}
+
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0pt}

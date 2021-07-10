@@ -1,0 +1,24 @@
+\AtBeginDocument{\renewcommand{\contentsname}{\texttt{\HUGE{\color{gray}{11월의 역사}}}}}
+\renewcommand{\cftdot}{\raisebox{.5ex}{.}}
+\cftpagenumbersoff{chapter}
+\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{1}
+\renewcommand\cftsectionleader{\color{OysterGray}\cftdotfill{\cftsectiondotsep}}
+\setlength\cftchapterindent{-3.8em}
+\renewcommand{\cftchapterfont}{\normalfont\ttfamily\LARGE\color{PantoneBlue}}
+\renewcommand\cftsectionpresnum{}
+\renewcommand\cftsectionindent{1.6em}
+\renewcommand{\cftsectionfont}{\normalfont\sffamily\small\color{SunOrange}}
+\renewcommand{\cftsectionpagefont}{\sffamily}
+\titlecontents{section}
+[1.6em]
+{\sffamily\sffamily\small}
+{\color{Beeswax}}
+{\hspace*{0.8em}}
+{\color{OysterGray}\titlerule*[1pc]{.}\color{gray}\ttfamily\contentspage}
+
+% 차례에서 장 번호 없애기
+\def\hchaptertitlehead{}
+
+%toc 면주에 쪽번호가 달리지 않도록.
+\AtBeginDocument{\addtocontents{toc}{\protect\thispagestyle{empty}}} 
